@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+}
+
+.sidebar {
+    width: 230px;
+    background: #0d0d0d;
+    padding: 25px;
+    border-right: 1px solid #222;
+    height: 100vh;
+    position: fixed;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 18px 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #aaa;
+    margin-left: 5px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 30px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    width: 160px;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0;
+    animation: fadeSlideUp 0.7s ease forwards;
+    border: 1px solid #222;
+}
+
+.card:hover {
+    transform: scale(1.08) translateY(-5px);
+    background: #fff;
+    color: #000;
+    box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    background: #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+}
+
+.section-title {
+    width: 100%;
+    font-size: 22px;
+    margin: 25px 0 8px;
+    color: #fff;
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.big-search {
+    width: 80%;
+    padding: 18px;
+    font-size: 22px;
+    border-radius: 12px;
+    background: #111;
+    border: 2px solid #333;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    transition: .3s ease;
+}
+
+.big-search:focus {
+    border-color: #fff;
+    transform: scale(1.03);
+}
+
+.artist-bio {
+    margin-top: 40px;
+    animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.bio-card {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background: #0d0d0d;
+    border-radius: 15px;
+    border: 1px solid #222;
+}
+
+.bio-photo {
+    width: 180px;
+    height: 180px;
+    background: #000;
+    border-radius: 12px;
+    border: 2px solid #333;
+}
+
+.bio-text {
+    width: 70%;
+}
+
+.bio-text h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.bio-text p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.story {
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.story p {
+    margin-bottom: 20px;
+}
