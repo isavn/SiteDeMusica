@@ -7,13 +7,13 @@
 
 body {
     display: flex;
-    background-color: #000;
+    background-color: #f5f1f1;
     color: #fff;
 }
 
 .sidebar {
     width: 230px;
-    background: #0d0d0d;
+    background: #e7e7e7;
     padding: 25px;
     border-right: 1px solid #222;
     height: 100vh;
@@ -24,7 +24,7 @@ body {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: #fff;
+    color: #020202;
 }
 
 .sidebar nav ul {
@@ -36,14 +36,14 @@ body {
 }
 
 .sidebar a {
-    color: #fff;
+    color: #3f3b3b;
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s ease;
 }
 
 .sidebar a:hover {
-    color: #aaa;
+    color: #161515;
     margin-left: 5px;
 }
 
@@ -56,7 +56,7 @@ body {
 h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #292727;
 }
 
 .cards {
@@ -66,7 +66,7 @@ h2 {
 }
 
 .card {
-    background: #111;
+    background: #ffffff;
     width: 160px;
     border-radius: 12px;
     padding: 12px;
@@ -75,30 +75,30 @@ h2 {
     transition: 0.3s ease;
     opacity: 0;
     animation: fadeSlideUp 0.7s ease forwards;
-    border: 1px solid #222;
+    border: 1px solid #dadada;
 }
 
 .card:hover {
     transform: scale(1.08) translateY(-5px);
     background: #fff;
-    color: #000;
+    color: #3f3d3d;
     box-shadow: 0 10px 20px rgba(255,255,255,0.1);
 }
 
 .card img {
     width: 100%;
     height: 160px;
-    background: #000;
+    background: #e6e6e6;
     border-radius: 10px;
     margin-bottom: 10px;
-    border: 1px solid #333;
+    border: 1px solid #ffffff;
 }
 
 .section-title {
     width: 100%;
     font-size: 22px;
     margin: 25px 0 8px;
-    color: #fff;
+    color: #252323;
 }
 
 @keyframes fadeSlideUp {
@@ -117,9 +117,9 @@ h2 {
     padding: 18px;
     font-size: 22px;
     border-radius: 12px;
-    background: #111;
+    background: #ebebeb;
     border: 2px solid #333;
-    color: white;
+    color: rgb(0, 0, 0);
     display: block;
     margin: 20px auto;
     transition: .3s ease;
@@ -159,12 +159,12 @@ h2 {
 .bio-text h3 {
     font-size: 26px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #201e1e;
 }
 
 .bio-text p {
     font-size: 16px;
-    color: #ccc;
+    color: #3a3434;
     line-height: 1.6;
 }
 
@@ -175,7 +175,7 @@ h2 {
     max-width: 900px;
     font-size: 18px;
     line-height: 1.8;
-    color: #e0e0e0;
+    color: #292626;
 }
 
 .story p {
